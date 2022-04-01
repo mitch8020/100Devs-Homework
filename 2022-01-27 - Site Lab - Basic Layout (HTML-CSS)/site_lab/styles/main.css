@@ -1,0 +1,130 @@
+/*
+  ===========================
+  CUSTOM STYLES / TYPOGRAPHY
+  ===========================
+*/
+
+body {
+    background: #8bcce6;
+    color: #fff;
+    font-family: "Times New Roman", sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 44px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h2 {
+    font: bold 24px/44px "Roboto", sans-serif;
+}
+
+p {
+    line-height: 22px;
+}
+
+li {
+    line-height: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+/*
+  ===========================
+  POSITIONING
+  ===========================
+*/
+
+.main-container {
+    border: 4px solid #5dc75e;
+    margin: 30px auto;
+    width: 640px;
+}
+
+.title-container {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.header-nav {
+    padding: 0 auto;
+    text-align: center;
+}
+
+.sub-header {
+    margin: 22px 0 22px 30px;
+}
+
+.text-container {
+    margin: 22px 32px;
+}
+
+.footer-nav {
+    padding: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    border-right: 2px solid #8a9093;
+    padding: 0 5px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+/*
+  ===========================
+  IMAGE
+  ===========================
+*/
+
+img {
+    float: right;
+    padding: 0 20px 20px 20px;
+    width: 180px;
+    height: auto;
+}
+
+/*
+  ===========================
+  LINKS
+  ===========================
+*/
+
+li a,
+.current-page:hover {
+    color: #5dc75e;
+    font-weight: bold;
+}
+
+.current-page {
+    color: #fff;
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+/*
+  ===========================
+  CLEARFIX
+  ===========================
+*/
+
+.text-container:before,
+.text-container:after {
+  content: "";
+  display: table;
+}
+
+.text-container:after {
+  clear: both;
+}
+
+.text-container {
+  clear: both;
+  *zoom: 1;
+}

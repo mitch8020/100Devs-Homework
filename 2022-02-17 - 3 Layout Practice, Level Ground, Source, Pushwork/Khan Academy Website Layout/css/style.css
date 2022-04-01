@@ -1,0 +1,177 @@
+/*
+  ===========================
+  BOX MODEL HACK
+  ===========================
+*/
+
+* {
+     box-sizing: border-box;
+}
+
+/*
+  ===========================
+  CLEARFIX HACK
+  ===========================
+*/
+
+.clearfix:before, .clearfix:after {
+     content: "";
+     display: block;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clearfix:after {
+     clear: both;
+}
+
+.clearfix {
+	clear: both;
+     *zoom: 1;
+}
+
+/*
+  ===========================
+  BASE STYLES
+  ===========================
+*/
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  text-decoration: none;
+}
+
+/*
+  ===========================
+  LAYOUT STYLES
+  ===========================
+*/
+
+body, .header-container, .main-container {
+  width: 100vw;
+}
+
+.header-container {
+  border-bottom: 1px solid gray;
+}
+
+header, main {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 4rem;
+}
+
+main {
+  height: 48rem;
+}
+
+figure, .website-description {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.website-description {
+  padding: 10rem 0;
+}
+
+img {
+  height: 100%;
+}
+
+/*
+  ===========================
+  MODULE STYLES
+  ===========================
+*/
+
+header > *, header li, 
+.website-nav li {
+  float: left;
+}
+
+header ul {
+  float: right;
+}
+
+.courses-list, form {
+  padding: 1rem 3rem 1rem 0;
+}
+
+.header-nav li{
+  padding: 1rem 0 1rem 3rem;
+}
+
+.logo {
+  padding: 1rem 6rem;
+}
+
+p + p {
+  padding-top: 3rem;
+}
+
+.nav-section {
+  height: 3.5rem;
+  margin: 3rem 0;
+}
+
+.website-nav li {
+  height: 3.5rem;
+  width: 8rem;
+  border-radius: .5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+/*
+  ===========================
+  STATE STYLES
+  ===========================
+*/
+
+.logo:hover {
+  color: #38f;
+}
+
+/*
+  ===========================
+  THEME STYLES
+  ===========================
+*/
+
+header * {
+  color: #38f;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+}
+
+p:first-child {
+  font: 5rem/6.5rem sans-serif;
+}
+
+p + p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.website-nav li {
+  background: #26f;
+}
+
+.website-nav a {
+  color: white;
+  font-size: 1.5rem;
+}

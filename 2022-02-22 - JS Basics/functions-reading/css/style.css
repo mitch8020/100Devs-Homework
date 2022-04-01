@@ -1,0 +1,82 @@
+/*
+  ===========================
+  BOX MODEL HACK
+  ===========================
+*/
+
+* {
+     box-sizing: border-box;
+}
+
+/*
+  ===========================
+  CLEARFIX HACK
+  ===========================
+*/
+
+.clearfix:before, .clearfix:after {
+     content: "";
+     display: block;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clearfix:after {
+     clear: both;
+}
+
+.clearfix {
+	clear: both;
+     *zoom: 1;
+}
+
+/*
+  ===========================
+  BASE STYLES
+  ===========================
+*/
+
+body {
+  width: 250px;
+  margin: 0 auto;
+}
+
+/*
+  ===========================
+  LAYOUT
+  ===========================
+*/
+
+body * {
+  width: 100%;
+  margin: 10px auto;
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+fieldset * {
+  flex: 1 50%;
+}
+
+/*
+  ===========================
+  ADDITIONAL STYLES
+  ===========================
+*/
+
+#submitButton {
+  width: 100px;
+  border: 2px solid black;
+  background: lightgray;
+  text-align: center;
+}

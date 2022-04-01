@@ -1,0 +1,102 @@
+/*
+  ===========================
+  BOX MODEL HACK
+  ===========================
+*/
+
+* {
+     box-sizing: border-box;
+}
+
+/*
+  ===========================
+  CLEARFIX HACK
+  ===========================
+*/
+
+.clearfix:before, .clearfix:after {
+     content: "";
+     display: block;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clearfix:after {
+     clear: both;
+}
+
+.clearfix {
+	clear: both;
+     *zoom: 1;
+}
+
+/*
+  =========================
+  SIMPLE COLOR / BORDER
+  =========================
+*/
+
+body, header, footer, section {
+  border: .5px solid gray;
+  background: lightgray;
+  text-align: center;
+}
+
+/*
+  =========================
+  BOX POSITIONING
+  =========================
+*/
+
+header, footer {
+  height: 12.5vh;
+}
+
+section {
+  height: 25vh;
+}
+
+/*
+  =========================
+  LAPTOP VERSION
+  =========================
+*/
+
+@media all and (min-width: 440px) {
+  header, footer {
+    height: 10vh;
+  }
+  
+  section {
+    width: 50%;
+    float: left;
+  }
+  
+  section:first-child {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 660px) {
+  section {
+    width: 33.3333%;
+  }
+
+  section:first-child {
+    width: 33.3333%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+/* 
+MOBILE: 320px to 425px
+TABLET: 768px
+LAPTOP: 1024px to 1440px 
+*/

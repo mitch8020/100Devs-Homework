@@ -1,0 +1,55 @@
+/*
+    =========================
+    BOX-SIZING
+    =========================
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+    =========================
+    SIMPLE COLOR / BORDER
+    =========================
+*/
+
+body, header, footer, header + section, section > div {
+    border: .5px solid gray;
+    background: lightgray;
+    text-align: center;
+}
+
+body {
+    margin: 22px;
+}
+
+/*
+    =========================
+    BOX POSITIONING
+    =========================
+*/
+
+header, footer {
+    width: 100%;
+    min-height: 125px;
+    clear: both;
+}
+
+header + section {
+    width: 100%;
+    height: 175px;
+}
+section > div {
+    width: 40%;
+    height: 225px;
+    float: left;
+}
+
+div + div {
+    width: 60%;
+    height: 225px;
+    float: left;
+}
