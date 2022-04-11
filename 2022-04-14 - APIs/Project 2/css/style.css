@@ -37,22 +37,36 @@
   ===========================
 */
 
-body {
-
+body * {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 /*
   ===========================
   LAYOUT
   ===========================
 */
-header {
 
+h1, h2, h3 {
+  padding: 20px 0 10px 0;
+  font-weight: bold;
 }
 
-footer {
+input {
+  padding: 10px 0;
+  width: 50%;
+}
 
+button {
+  width: 50%;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
 }
 
 /*
