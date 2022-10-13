@@ -1,0 +1,234 @@
+/*
+  ===========================
+  BOX MODEL HACK
+  ===========================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  ===========================
+  CLEARFIX HACK
+  ===========================
+*/
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+	clear: both;
+  *zoom: 1;
+}
+
+/*
+  ===========================
+  BASE STYLES
+  ===========================
+*/
+
+html {
+  font: 62.5% "Roboto", Arial, sans-serif;
+}
+
+body {
+  width: 96rem;
+  margin: 0 auto;
+}
+
+header, main, .intro {
+  width: 100%;
+}
+
+.intro {
+  height: 2rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.content {
+  margin: 0 1rem;
+}
+
+
+/*
+  ===========================
+  HEADER LAYOUT
+  ===========================
+*/
+
+header {
+  background: black;
+  height: 4rem;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+header * {
+  color: white;
+  text-decoration: none;
+  float: left;
+}
+
+header > * {
+  margin: 1rem 1.5rem;
+}
+
+li {
+  margin: 0 1.5rem;
+}
+
+form {
+  float: right;
+}
+
+/*
+  ===========================
+  MAIN SECTION LAYOUT
+  ===========================
+*/
+
+h1, time {
+  float: left;
+  font-size: 2rem;
+}
+
+time {
+  float: right;
+  color: gray;
+}
+
+.main-bigMainOne, .main-fourSmallOnes {
+  width: 50%;
+  height: 25rem;
+  float: left;
+}
+
+.main-fourSmallOnes {
+  float: right;
+}
+
+.main-fourSmallOnes > section {
+  float: left;
+  width: 50%;
+  height: 12.5rem;
+}
+
+/*
+  ===========================
+  NEWS SECTION LAYOUT
+  ===========================
+*/
+
+.news-articles > section {
+  float: left;
+  width: 33.3333%;
+  height: 25rem;
+}
+
+/*
+  ===========================
+  TEXT STYLES
+  ===========================
+*/
+
+h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-size: 2rem;
+  border-left: .5rem solid red;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.main-bigMainOne .main-caption * {
+  font-size: 1.25rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.main-bigMainOne .main-caption h3 {
+  font-size: 2.5rem;
+}
+
+.main-fourSmallOnes .main-caption h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.sub-caption * {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.sub-caption h3 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+span a {
+  border-left: .2rem solid red;
+  padding-left: .5rem;
+  font-size: 1rem;
+  color: gray;
+  text-decoration: none;
+}
+
+/*
+  ===========================
+  IMAGE STYLES
+  ===========================
+*/
+
+figure {
+  background: orange;
+  border: 1px solid black;
+}
+
+.caption-overlay figure {
+  width: 98%;
+  height: 100%;
+}
+
+.main-fourSmallOnes .caption-overlay figure {
+  height: 98%;
+}
+
+.news-articles figure {
+  width: 95%;
+  height: 60%;
+}
+
+img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*
+  ===========================
+  CAPTION OVERLAY STYLES
+  ===========================
+*/
+
+.caption-overlay {
+  position: relative;
+}
+
+.main-caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
